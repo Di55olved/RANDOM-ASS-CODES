@@ -1,5 +1,16 @@
 import hashlib
 
+"""
+The purpose of this code is to encrypt a files using hashing by first breaking up the 
+code into Blocks of size 1024(or specified as something else)
+and strarting from the last block, hash it and conatenate it to the 
+end of the block before it. Repeat this process until you get the hash of the first block. 
+
+The functions only generate a hash and verify it. 
+
+No function available for decryption. 
+"""
+
 # define the file path and block size 
 file_path = '/home/burhan/Downloads/c.mp4'
 
